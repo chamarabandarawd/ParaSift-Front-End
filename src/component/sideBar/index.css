@@ -1,0 +1,13 @@
+.sideBar{
+    width: 250px;
+    background-color: #202123;
+    height: 100vh;
+
+}
+@media screen and (max-width: 760px) {
+    .sideBar{
+        width: 100vw;
+        min-height: 50px;
+    
+    }
+}
