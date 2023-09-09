@@ -25,7 +25,6 @@
 .conatiner .mid-section {
     flex: 1;
     overflow-y: scroll; /* Always show the vertical scrollbar */
-    background-color: aqua;
 }
 
 .userInput-outer{
@@ -35,11 +34,26 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+    gap: 20px;
 }
 
 .userInput-outer #outlined-basic{
 width: 60vw ;
 
+}
+
+
+.user_input_section{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px 10px 10px 10px;
+}
+.req_para{
+border: 1px solid gray;
+border-radius: 10px;
+padding: 10px 10px 10px 10px;
+text-align: justify;
 }
 
 

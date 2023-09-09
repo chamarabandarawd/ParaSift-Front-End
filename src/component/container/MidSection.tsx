@@ -1,27 +1,15 @@
 import React from 'react'
+import UserInputSection from './UserInputSection'
+import GeneratedOutputSection from './GeneratedOutputSection'
+import Chat from './Chat';
 
 function MidSection() {
-  return (
-    <div className='mid-section'>MidSection
-    <p>Sri Lanka: The Island of Serendipity
 
-    se as its landscapes. The island's history dates back over two millennia, making it one of the oldest continually inhabited places in the world. One of its earliest recorded civilizations, the Anuradhapura Kingdom, emerged around the 4th century BCE, and its ancient city of Anuradhapura is now a UNESCO World Heritage Site, replete with ancient dagobas (stupas), monastic ruins, and sacred Bodhi trees.
- Perahera, often rse as its landscapes. The island's history dates back over two millennia, making it one of the oldest continually inhabited places in the world. One of its earliest recorded civilizations, the Anuradhapura Kingdom, emerged around the 4th century BCE, and its ancient city of Anuradhapura is now a UNESCO World Heritage Site, replete with ancient dagobas (stupas), monastic ruins, and sacred Bodhi trees.
- Perahera, often rse as its landscapes. The island's history dates back over two millennia, making it one of the oldest continually inhabited places in the world. One of its earliest recorded civilizations, the Anuradhapura Kingdom, emerged around the 4th century BCE, and its ancient city of Anuradhapura is now a UNESCO World Heritage Site, replete with ancient dagobas (stupas), monastic ruins, and sacred Bodhi trees.
- Perahera, often rse as its landscapes. The island's history dates back over two millennia, making it one of the oldest continually inhabited places in the world. One of its earliest recorded civilizations, the Anuradhapura Kingdom, emerged around the 4th century BCE, and its ancient city of Anuradhapura is now a UNESCO World Heritage Site, replete with ancient dagobas (stupas), monastic ruins, and sacred Bodhi trees.
- Perahera, often rse as its landscapes. The island's history dates back over two millennia, making it one of the oldest continually inhabited places in the world. One of its earliest recorded civilizations, the Anuradhapura Kingdom, emerged around the 4th century BCE, and its ancient city of Anuradhapura is now a UNESCO World Heritage Site, replete with ancient dagobas (stupas), monastic ruins, and sacred Bodhi trees.
- Perahera, often rse as its landscapes. The island's history dates back over two millennia, making it one of the oldest continually inhabited places in the world. One of its earliest recorded civilizations, the Anuradhapura Kingdom, emerged around the 4th century BCE, and its ancient city of Anuradhapura is now a UNESCO World Heritage Site, replete with ancient dagobas (stupas), monastic ruins, and sacred Bodhi trees.
- Perahera, often rse as its landscapes. The island's history dates back over two millennia, making it one of the oldest continually inhabited places in the world. One of its earliest recorded civilizations, the Anuradhapura Kingdom, emerged around the 4th century BCE, and its ancient city of Anuradhapura is now a UNESCO World Heritage Site, replete with ancient dagobas (stupas), monastic ruins, and sacred Bodhi trees.
- Perahera, often rse as its landscapes. The island's history dates back over two millennia, making it one of the oldest continually inhabited places in the world. One of its earliest recorded civilizations, the Anuradhapura Kingdom, emerged around the 4th century BCE, and its ancient city of Anuradhapura is now a UNESCO World Heritage Site, replete with ancient dagobas (stupas), monastic ruins, and sacred Bodhi trees.
- Perahera, often rse as its landscapes. The island's history dates back over two millennia, making it one of the oldest continually inhabited places in the world. One of its earliest recorded civilizations, the Anuradhapura Kingdom, emerged around the 4th century BCE, and its ancient city of Anuradhapura is now a UNESCO World Heritage Site, replete with ancient dagobas (stupas), monastic ruins, and sacred Bodhi trees.
- Perahera, often rse as its landscapes. The island's history dates back over two millennia, making it one of the oldest continually inhabited places in the world. One of its earliest recorded civilizations, the Anuradhapura Kingdom, emerged around the 4th century BCE, and its ancient city of Anuradhapura is now a UNESCO World Heritage Site, replete with ancient dagobas (stupas), monastic ruins, and sacred Bodhi trees.
- Perahera, often rse as its landscapes. The island's history dates back over two millennia, making it one of the oldest continually inhabited places in the world. One of its earliest recorded civilizations, the Anuradhapura Kingdom, emerged around the 4th century BCE, and its ancient city of Anuradhapura is now a UNESCO World Heritage Site, replete with ancient dagobas (stupas), monastic ruins, and sacred Bodhi trees.
- Perahera, often rse as its landscapes. The island's history dates back over two millennia, making it one of the oldest continually inhabited places in the world. One of its earliest recorded civilizations, the Anuradhapura Kingdom, emerged around the 4th century BCE, and its ancient city of Anuradhapura is now a UNESCO World Heritage Site, replete with ancient dagobas (stupas), monastic ruins, and sacred Bodhi trees.
- Perahera, often rse as its landscapes. The island's history dates back over two millennia, making it one of the oldest continually inhabited places in the world. One of its earliest recorded civilizations, the Anuradhapura Kingdom, emerged around the 4th century BCE, and its ancient city of Anuradhapura is now a UNESCO World Heritage Site, replete with ancient dagobas (stupas), monastic ruins, and sacred Bodhi trees.
- Perahera, often rse as its landscapes. The island's history dates back over two millennia, making it one of the oldest continually inhabited places in the world. One of its earliest recorded civilizations, the Anuradhapura Kingdom, emerged around the 4th century BCE, and its ancient city of Anuradhapura is now a UNESCO World Heritage Site, replete with ancient dagobas (stupas), monastic ruins, and sacred Bodhi trees.
- Perahera, often rse as its landscapes. The island's history dates back over two millennia, making it one of the oldest continually inhabited places in the world. One of its earliest recorded civilizations, the Anuradhapura Kingdom, emerged around the 4th century BCE, and its ancient city of Anuradhapura is now a UNESCO World Heritage Site, replete with ancient dagobas (stupas), monastic ruins, and sacred Bodhi trees.
- Perahera, often r
-Culinary Delights</p>
+  const dataToRender = [1, 2, 3, 4, 5];
+  return (
+    <div className='mid-section'>
+      <Chat/>
+
     </div>
   )
 }

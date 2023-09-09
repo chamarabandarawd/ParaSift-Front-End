@@ -1,0 +1,55 @@
+.sideBar{
+    width: 250px;
+    background-color: #202123;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 0px 5px 0px 5px;
+    
+
+}
+@media screen and (max-width: 760px) {
+    .sideBar{
+        width: 100vw;
+        min-height: 50px;
+    
+    }
+}
+
+.addBtn{
+width: 100%;
+color: aliceblue;
+}
+
+.chatList{
+    width: 100%;
+    flex: 1;
+    position: relative;
+    overflow-y: scroll; /* Show the scrollbar on hover */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    gap: 8px;
+}
+
+
+.chatBtn{
+    width: 220px;
+    color: rgb(190, 220, 247);
+}
+
+.userInfo{
+    height: 60px;
+    width: 100%;
+    padding: 20px 10px 20px 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.userInfo h3 {
+    color: aliceblue;
+}
