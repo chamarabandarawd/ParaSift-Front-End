@@ -1,19 +1,20 @@
-.conatiner{
+.conatiner {
     flex: 1;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
+
 @media screen and (max-width: 760px) {
-    .conatiner{
-        width: 100vw;    
+    .conatiner {
+        width: 100vw;
     }
 }
 
 
 
-.header{
+.header {
     height: 50px;
     width: 100%;
     display: flex;
@@ -24,13 +25,14 @@
 
 .conatiner .mid-section {
     flex: 1;
-    overflow-y: scroll; /* Always show the vertical scrollbar */
+    overflow-y: scroll;
+    /* Always show the vertical scrollbar */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.userInput-outer{
+.userInput-outer {
     height: 100px;
     width: 100%;
     display: flex;
@@ -40,32 +42,43 @@
     gap: 20px;
 }
 
-.userInput-outer #outlined-basic{
-width: 60vw ;
+.userInput-outer #outlined-basic {
+    width: 60vw;
 
 }
 
-
-.user_input_section{
+.user_input_section {
     display: flex;
-    flex-direction: row;
-    gap: 10px;
-    padding: 10px 10px 10px 10px;
+    justify-content: space-between;
+    padding: 10px;
+    /* Adjust padding as needed */
+    background-color: #f0f0f0;
+    /* Adjust background color as needed */
+    width: 100%;
 }
-.req_para{
-border: 1px solid gray;
-border-radius: 10px;
-padding: 10px 10px 10px 10px;
-text-align: justify;
-flex: 1;
+
+.chat{
+    width: 100%;
 }
-.icon{
+
+.fixed-left,
+.fixed-right {
+    flex: 0 0 40px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    width: 30px;
     cursor: pointer;
-    gap: 10px;
 }
 
+.req_para {
+    flex: 1;
+    padding: 10px;
+}
 
+.user_output_Section {
+    background-color: white
+}
 
+.sendBtn{
+    cursor: pointer;
+}

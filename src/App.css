@@ -1,10 +1,37 @@
-.App{
+.App {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-height: 100vh;
+    background: hsla(202, 83%, 70%, 1);
+
+    background: linear-gradient(90deg, hsla(202, 83%, 70%, 1) 0%, hsla(154, 90%, 70%, 1) 95%);
+
+    background: -moz-linear-gradient(90deg, hsla(202, 83%, 70%, 1) 0%, hsla(154, 90%, 70%, 1) 95%);
+
+    background: -webkit-linear-gradient(90deg, hsla(202, 83%, 70%, 1) 0%, hsla(154, 90%, 70%, 1) 95%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#72C3F2", endColorstr="#6DF7BB", GradientType=1);
 }
 
 @media screen and (max-width: 760px) {
-    .App{
+    .App {
         flex-direction: column;
     }
+}
+
+.container-loging {
+    width: 400px;
+    border-radius: 10px;
+    border: rgb(219, 216, 216) solid 2px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(219, 216, 216);
+    padding: 20px;
+    gap: 10px;
 }

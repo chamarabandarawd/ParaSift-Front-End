@@ -1,15 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import UserInputSection from './UserInputSection';
 import GeneratedOutputSection from './GeneratedOutputSection';
 
-function Chat() {
-    const dataToRender = [1, 2, 3, 4, 5];
+interface Props{
+  story:[]
+}
+
+
+
+function Chat({story}:Props) {
+  console.log("heloo")
+  console.log(story);
+    const chatList=story;
     return (
       <div className='mid-section'>
   
-        {dataToRender.map((item, index) => (
-          <><UserInputSection />
-          <GeneratedOutputSection />
+        {chatList.map((chat:any) => (
+          <>
+          <UserInputSection text={chat.text} />
+          <GeneratedOutputSection summary={chat.summary}/>
           </>
         ))}
   
