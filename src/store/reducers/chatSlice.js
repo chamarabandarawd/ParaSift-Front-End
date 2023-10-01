@@ -71,9 +71,10 @@ const storyReducer=createReducer(initialState,(builder)=>{
     builder.addCase(getChats.fulfilled,(state,action)=>{
         const updatedChat = state.chats.find(chat => chat.publicId === '123'); // Replace '123' with the actual publicId you want to update
   if (updatedChat) {
-    action.payload.map(element => {
-        state.chats.push(element);
-    });
+    // action.payload.map(element => {
+    //     state.chats.push(element);
+    state.chats=action.payload;
+    //});
   }
     });
     builder.addCase(genChatAction,(state,action)=>{

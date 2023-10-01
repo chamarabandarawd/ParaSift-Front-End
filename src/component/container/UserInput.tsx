@@ -14,6 +14,13 @@ interface Props{
 function UserInput({message,updateMessage}:Props) {
   const dispatch: Dispatch<any> = useDispatch();
 
+  const handleEnterKeyPress = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    if (event.key === 'Enter') {
+      // If Enter key is pressed, call handleSendMessage function
+      handleSendMessage();
+    }
+  };
+
 
   const handleTextFieldChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     updateMessage(event.target.value)
@@ -80,6 +87,7 @@ function UserInput({message,updateMessage}:Props) {
         variant="outlined"
         value={message}
         onChange={handleTextFieldChange}
+        onKeyDown={handleEnterKeyPress} 
       />
       <div className='sendBtn' onClick={handleSendMessage}>
         <SendOutlinedIcon />
