@@ -37,7 +37,7 @@ export const userSignUp=createAction('user-singUp',(firstName,lastName)=>{
 
 export const clearChat=createAsyncThunk('clear-chat',async()=>{
     try {
-        const response =await fetch('http://localhost:5000/api/v1/summary',{
+        const response =await fetch('https://parasift.onrender.com/api/v1/summary',{
             method:'DELETE'
         });
         if (!response.ok) {
@@ -52,7 +52,7 @@ export const clearChat=createAsyncThunk('clear-chat',async()=>{
 })
 
 export const getChats=createAsyncThunk('chats-get',async()=>{
-    const chats=await fetch('http://localhost:5000/api/v1/summary')
+    const chats=await fetch('https://parasift.onrender.com/api/v1/summary')
     const data=await chats.json()
     if(Array.isArray(data)){
         console.log(data)
