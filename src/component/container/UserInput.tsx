@@ -34,7 +34,8 @@ function UserInput({message,updateMessage}:Props) {
     };
 
 
-    fetch("http://localhost:5000/api/v1/summary/generate", {
+   // fetch("http://localhost:5000/api/v1/summary/generate", {
+    fetch("https://parasift.onrender.com/summary/generate", {
       method: 'POST',
       body: JSON.stringify(requestBody1),
       headers: {
@@ -50,7 +51,7 @@ function UserInput({message,updateMessage}:Props) {
             summary: generatedSummary
           };
           dispatch(genChatAction(requestBody2.text,requestBody2.summary));
-          return fetch("http://localhost:5000/api/v1/summary", {
+          return fetch("https://parasift.onrender.com/summary", {
             method: 'POST',
             body: JSON.stringify(requestBody2),
             headers: {
